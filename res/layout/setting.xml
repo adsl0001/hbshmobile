@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#fffbfbfb" android:layout_width="fill_parent" 
+  android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" 
+        android:orientation="vertical" android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" 
+        android:layout_marginTop="13.0dip" android:layout_marginRight="15.0dip">
+
+        
+        <LinearLayout android:gravity="center_horizontal" 
+            android:orientation="vertical" 
+            android:background="@drawable/bg_occasional_enter" 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/item_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="13.0dip"
+                android:paddingRight="13.0dip" >
+              	<TextView android:textSize="18.0sp" 
+              	    android:textColor="@color/black"
+              	    android:gravity="left|center" 
+              	    android:layout_width="wrap_content" 
+              	    android:layout_height="fill_parent" 
+              	    android:text="允许推送" 
+              	    android:drawablePadding="10.0dip" />
+  
+                <CheckBox
+                    android:id="@+id/chk_setting_enablepush"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="left|center"
+                    android:text="" />
+             
+            </RelativeLayout>
+            <ImageView android:background="@drawable/img_gray_thread" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" />
+ 
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/item_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="13.0dip"
+                android:paddingRight="13.0dip" >
+              	<TextView android:textSize="18.0sp" 
+              	    android:textColor="@color/black" 
+              	    android:gravity="left|center" 
+              	    android:layout_width="wrap_content" 
+              	    android:layout_height="fill_parent" 
+              	    android:text="自动登录" 
+              	    android:drawablePadding="10.0dip" />
+  
+                <CheckBox
+                    android:id="@+id/chk_setting_autologin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="left|center"
+                    android:text="" />
+             
+            </RelativeLayout>
+            
+        <ImageView android:background="@drawable/img_gray_thread" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" />
+ 
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/item_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="13.0dip"
+                android:paddingRight="13.0dip" >
+              	<TextView android:textSize="18.0sp" 
+              	    android:textColor="@color/black" 
+              	    android:gravity="left|center" 
+              	    android:layout_width="wrap_content" 
+              	    android:layout_height="fill_parent" 
+              	    android:text="记住密码" 
+              	    android:drawablePadding="10.0dip" />
+  
+                <CheckBox
+                    android:id="@+id/chk_setting_savepassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="left|center"
+                    android:text="" />
+             
+            </RelativeLayout>
+            <ImageView android:background="@drawable/img_gray_thread" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" />
+            <!-- 字体大小控制 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:id="@+id/textsetting"
+                android:layout_height="40.0dip"
+                android:background="@drawable/item_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="13.0dip"
+                android:paddingRight="13.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:drawablePadding="10.0dip"
+                    android:gravity="left|center"
+                    android:text="字体设置"
+                    android:textColor="@color/black"
+                    android:textSize="18.0sp" />
+
+            </RelativeLayout>
+
+         </LinearLayout>
+        <!-- 个人信息维护  修改密码 关于移动办公平台 --> 
+        <LinearLayout android:gravity="center_horizontal" 
+             android:orientation="vertical" 
+             android:background="@drawable/bg_occasional_enter" 
+             android:layout_width="fill_parent" 
+             android:layout_height="fill_parent"
+             android:layout_marginTop="10dp"
+             >
+        
+            <RelativeLayout android:orientation="horizontal" 
+                android:id="@+id/person_setting" 
+                android:background="@drawable/item_bg" 
+                android:paddingLeft="13.0dip" 
+                android:paddingRight="13.0dip" android:layout_width="fill_parent" 
+                android:layout_height="40.0dip">
+                <TextView android:textSize="18.0sp" 
+                    android:textColor="@color/black" android:gravity="left|center" 
+                    android:layout_width="wrap_content" android:layout_height="fill_parent"
+                     android:text="个人信息" android:drawablePadding="10.0dip" />
+            </RelativeLayout>
+             <ImageView android:background="@drawable/img_gray_thread" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" />
+            <!-- 主题切换 -->
+            <RelativeLayout android:orientation="horizontal" 
+                android:id="@+id/theme_setting" 
+                android:background="@drawable/item_bg" 
+                android:paddingLeft="13.0dip" 
+                android:paddingRight="13.0dip" 
+                android:layout_width="fill_parent" 
+                android:layout_height="40.0dip">
+                <TextView android:textSize="18.0sp" 
+                    android:textColor="@color/black" android:gravity="left|center" 
+                    android:layout_width="wrap_content" android:layout_height="fill_parent"
+                     android:text="主题设置" android:drawablePadding="10.0dip" />
+                <!-- 按钮1 -->
+                <RelativeLayout 
+                    android:id="@+id/theme_selected_1"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left|center"
+                    >
+                    <TextView 
+                        android:text=""
+                        android:background="@drawable/common_title_bg_blue"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"/>
+                    <Button 
+                        android:id="@+id/theme_blue"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/check_selected"
+                        />
+                </RelativeLayout >
+                <!-- 按钮2 -->
+                <RelativeLayout 
+                    android:id="@+id/theme_selected2"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@id/theme_selected_1"
+                    
+                    android:gravity="left|center"
+                    >
+                    <TextView 
+                        android:text=""
+                        android:background="@drawable/common_title_bg_green"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"/>
+                    <Button 
+                        android:id="@+id/theme_green"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/check_selected"
+                        />
+                </RelativeLayout >
+                <!-- 按钮3 -->
+                <RelativeLayout 
+                    android:id="@+id/theme_selected3"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@id/theme_selected2"
+                    
+                    android:gravity="left|center"
+                    >
+                    <TextView 
+                        android:text=""
+                        android:background="@drawable/common_title_bg_red"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"/>
+                    <Button 
+                        android:id="@+id/theme_red"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/check_selected"
+                        />
+                </RelativeLayout >
+            </RelativeLayout>
+            <ImageView android:background="@drawable/img_gray_thread" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" />
+             
+             <RelativeLayout android:orientation="horizontal" 
+                android:id="@+id/password_setting" 
+                android:background="@drawable/item_bg" 
+                android:paddingLeft="13.0dip" 
+                android:paddingRight="13.0dip" android:layout_width="fill_parent" 
+                android:layout_height="40.0dip">
+                <TextView android:textSize="18.0sp" 
+                    android:textColor="@color/black" android:gravity="left|center" 
+                    android:layout_width="wrap_content" android:layout_height="fill_parent"
+                     android:text="修改密码" android:drawablePadding="10.0dip" />
+            </RelativeLayout>
+            
+             <ImageView android:background="@drawable/img_gray_thread" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" />
+             <RelativeLayout android:orientation="horizontal" 
+                android:id="@+id/readhistory_setting" 
+                android:background="@drawable/item_bg" 
+                android:paddingLeft="13.0dip" 
+                android:paddingRight="13.0dip" android:layout_width="fill_parent" 
+                android:layout_height="40.0dip">
+                <TextView android:textSize="18.0sp" 
+                    android:textColor="@color/black" android:gravity="left|center" 
+                    android:layout_width="wrap_content" android:layout_height="fill_parent"
+                     android:text="阅读历史" android:drawablePadding="10.0dip" />
+            </RelativeLayout>
+             
+            <!--  <ImageView android:background="@drawable/img_gray_thread" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" />
+             <RelativeLayout android:orientation="horizontal" 
+                android:id="@+id/weather_setting" 
+                android:background="@drawable/item_bg" 
+                android:paddingLeft="13.0dip" 
+                android:paddingRight="13.0dip" android:layout_width="fill_parent" 
+                android:layout_height="40.0dip">
+                <TextView android:textSize="18.0sp" 
+                    android:textColor="@color/black" android:gravity="left|center" 
+                    android:layout_width="wrap_content" android:layout_height="fill_parent"
+                     android:text="天气预报" android:drawablePadding="10.0dip" />
+            </RelativeLayout> -->
+             
+           	<ImageView android:background="@drawable/img_gray_thread" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" />
+            <RelativeLayout android:orientation="horizontal" 
+                android:id="@+id/layout_setting_mynews" 
+                android:background="@drawable/item_bg" 
+                android:paddingLeft="13.0dip" 
+                android:paddingRight="13.0dip" android:layout_width="fill_parent" 
+                android:layout_height="40.0dip">
+                <TextView android:textSize="18.0sp" 
+                    android:textColor="@color/black" android:gravity="left|center" 
+                    android:layout_width="wrap_content" android:layout_height="fill_parent"
+                     android:text="我的消息" android:drawablePadding="10.0dip" />
+            </RelativeLayout>
+            <ImageView android:background="@drawable/img_gray_thread" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" />
+            <RelativeLayout android:orientation="horizontal" 
+                android:id="@+id/layout_setting_seggestion" 
+                android:background="@drawable/item_bg" 
+                android:paddingLeft="13.0dip" 
+                android:paddingRight="13.0dip" android:layout_width="fill_parent" 
+                android:layout_height="40.0dip">
+                <TextView android:textSize="18.0sp" 
+                    android:textColor="@color/black" android:gravity="left|center" 
+                    android:layout_width="wrap_content" android:layout_height="fill_parent"
+                     android:text="意见反馈" android:drawablePadding="10.0dip" />
+            </RelativeLayout>
+            <ImageView android:background="@drawable/img_gray_thread" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" />
+            <RelativeLayout android:orientation="horizontal" 
+                android:id="@+id/layout_setting_help" 
+                android:background="@drawable/item_bg" 
+                android:paddingLeft="13.0dip" 
+                android:paddingRight="13.0dip" android:layout_width="fill_parent" 
+                android:layout_height="40.0dip">
+                <TextView android:textSize="18.0sp" 
+                    android:textColor="@color/black" android:gravity="left|center" 
+                    android:layout_width="wrap_content" android:layout_height="fill_parent"
+                     android:text="关于移动办公平台" android:drawablePadding="10.0dip" />
+            </RelativeLayout>
+            <!-- 清除缓存 
+            <ImageView android:background="@drawable/img_gray_thread" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" />
+            <RelativeLayout android:orientation="horizontal" 
+                android:id="@+id/layout_setting_cache" 
+                android:background="@drawable/item_bg" 
+                android:paddingLeft="13.0dip" 
+                android:paddingRight="13.0dip" android:layout_width="fill_parent" 
+                android:layout_height="40.0dip">
+                <TextView android:textSize="18.0sp" 
+                    android:textColor="@color/black" android:gravity="left|center" 
+                    android:layout_width="wrap_content" android:layout_height="fill_parent"
+                     android:text="清除缓存" android:drawablePadding="10.0dip" />
+            </RelativeLayout>
+            -->
+        </LinearLayout>
+        
+         <LinearLayout android:gravity="center_horizontal" 
+             android:orientation="vertical" 
+             android:background="@drawable/bg_occasional_enter" 
+             android:layout_width="fill_parent" 
+             android:layout_height="fill_parent"
+             android:layout_marginTop="10dp"
+             >
+        
+            <RelativeLayout android:orientation="horizontal" 
+                android:id="@+id/layout_setting_logout" 
+                android:background="@drawable/item_bg" 
+                android:paddingLeft="13.0dip" 
+                android:paddingRight="13.0dip" android:layout_width="fill_parent" 
+                android:layout_height="40.0dip">
+                <TextView android:textSize="18.0sp" 
+                    android:textColor="@color/black" android:gravity="left|center" 
+                    android:layout_width="wrap_content" android:layout_height="fill_parent"
+                     android:text="退出系统" android:drawablePadding="10.0dip" />
+            </RelativeLayout>
+        </LinearLayout>
+      	<TextView 
+      	    android:text="二维码扫描下载"
+      	    android:layout_width="match_parent"
+      	    android:layout_height="wrap_content"
+      	    android:layout_marginTop="10dp"
+      	    android:layout_marginLeft="5dp"
+      	    /> 
+      	 <ImageView 
+      	     android:layout_width="wrap_content"
+      	     android:layout_height="wrap_content"
+      	     android:src="@drawable/two_dimension_code_41"
+      	     android:layout_marginTop="10dp"
+      	     /> 
+      	 <TextView 
+      	     android:layout_height="40dp"
+      	     android:layout_width="match_parent"
+      	     />
+    </LinearLayout>
+</ScrollView>

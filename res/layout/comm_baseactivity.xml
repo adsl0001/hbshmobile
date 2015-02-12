@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/comm_baseactivitylyot" android:background="@color/graybg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/comm_base_header" android:visibility="visible" android:layout_width="fill_parent" layout="@layout/comm_baseactivity_title" />
+    <LinearLayout android:id="@+id/focusLayout" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" android:orientation="vertical" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/layContent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <include android:layout_width="fill_parent" android:layout_weight="1.0" layout="@layout/comm_menu" />
+</LinearLayout>

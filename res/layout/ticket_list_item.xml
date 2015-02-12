@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/comm_list_select_bg" android:paddingLeft="13.0dip" android:paddingTop="10.0dip" android:paddingRight="13.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/newslist_item_laytitle">
+
+        <TextView
+            android:id="@+id/list_item_title"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="left"
+            android:text="aaaaaaaaaaaaaaaaaa"
+            android:textColor="#ff000000"
+            android:textSize="20.0sp" />
+
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/newslist_item_laytitle">
+
+        <TextView
+            android:id="@+id/list_item_content"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="aaaaaaaaaaaaaaaa"
+            android:textColor="#ff656565"
+            android:textSize="16.0sp" />
+
+    </LinearLayout>
+    
+    <TextView
+            android:id="@+id/ticket_list_item_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/list_item_arrow"
+            android:layout_centerVertical="true"
+            android:text="100￥"
+            android:textColor="#ff000000"
+            android:textSize="20.0sp" />
+    
+    <ImageView android:id="@+id/list_item_arrow" android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10.0dip" 
+        android:src="@drawable/btn_arrow_right" 
+        android:layout_alignParentRight="true" 
+        android:layout_centerVertical="true" />
+    
+</RelativeLayout>

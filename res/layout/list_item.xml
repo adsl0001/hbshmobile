@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/comm_list_select_bg" android:paddingLeft="13.0dip" android:paddingTop="10.0dip" android:paddingRight="13.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/newslist_item_laytitle">
+
+        <TextView
+            android:id="@+id/list_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            android:textColor="#ff000000"
+            android:textSize="20.0sp" />
+
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/newslist_item_laytitle">
+        <TextView android:textSize="16.0sp" 
+            android:textColor="#ff656565" 
+            android:id="@+id/list_item_content" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" 
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/list_item_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/btn_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    
+</RelativeLayout>

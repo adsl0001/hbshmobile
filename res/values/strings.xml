@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+
+    <string name="app_name">移动办公平台</string>
+    <string name="title_activity_about_help">AboutHelpActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_version_description">VersionDescriptionActivity</string>
+    <string name="title_activity_portal_new">PortalNewActivity</string>
+    <string name="title_activity_text_setting">TextSetting</string>
+    <string name="title_activity_suggestion">Suggestion</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_news_list_talk">NewsList_talk</string>
+    <string name="title_activity_read_history">ReadHistory</string>
+    <string name="title_activity_weather">Weather</string>
+    <string name="title">天气预报</string>
+    <string name="city">城市</string>
+    <string name="province">省份</string>
+    <string name="today_wea">今日天气</string>
+    <string name="qiweng">气温：</string>
+    <string name="jinri">今日天气实况</string>
+    <string name="fengli">风力：</string>
+    <string name="shidu">湿度：</string>
+    <string name="kongqi">空气质量：</string>
+    <string name="zhiwai">紫外线强度：</string>
+    <string name="city_str">城</string>
+    <string name="xiaotieshi">今日小贴士今日小贴士今日小贴士今日小贴士今日小贴士</string>
+    <string name="title_activity_hseguide_se">HSEGuideSEActivity</string>
+    <string name="title_activity_mobile">MobileActivity</string>
+    <string name="title_activity_qrcode_scan">QrcodeScanActivity</string>
+    <string name="menu_settings">Settings</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="title_activity_qr_result">QrResult</string>
+    <string name="title_activity_safety_loophole">SafetyLoophole</string>
+    <string name="title_activity_mobile_activity">移动应用</string>
+    <string name="title_activity_dzdplist_activity">身边美食</string>
+    <string name="title_activity_dzdpdetail_activity">详情</string>
+    <string name="title_activity_mlarealist_activity">身边优惠</string>
+    <string name="title_activity_mlareadetail_activity">详情</string>
+
+</resources>

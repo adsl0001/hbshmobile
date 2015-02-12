@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@+id/layHead" android:background="@drawable/common_title_bg"  android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="42.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+        <Button android:gravity="center" android:id="@+id/btnBack" android:background="@drawable/btn_return" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:visibility="gone"/>
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:id="@+id/txtTitle" android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="left|center"   android:text="HSE Mobile OA" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+         </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_blue_bg"
+            android:gravity="center"
+            android:text="right"
+            android:textColor="@color/white"
+            android:textSize="16.0sp"
+            android:visibility="gone" />
+
+</RelativeLayout>

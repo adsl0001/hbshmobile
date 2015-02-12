@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  android:baselineAligned="false" android:gravity="bottom|center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/comm_menubar" android:background="@drawable/bg_tab_bar_home" android:layout_width="fill_parent" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <RadioButton android:id="@+id/button_home" style="@style/tabbar_radioButton" android:textSize="10.0sp" android:textColor="@color/comm_menu_textcolor"  android:background="@drawable/btn_tab_home_blue" android:paddingTop="34.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="公司首页"  android:focusable="true"  android:shadowDx="0.0" android:shadowDy="0.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <RadioButton android:id="@+id/button_portal" style="@style/tabbar_radioButton" android:textSize="10.0sp" android:textColor="@color/comm_menu_textcolor" android:background="@drawable/btn_tab_portal_blue" android:paddingTop="34.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="集成平台"   android:focusable="true" android:shadowDx="0.0" android:shadowDy="0.0" />
+    </LinearLayout>
+    
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <RadioButton android:id="@+id/button_mobile" style="@style/tabbar_radioButton" android:textSize="10.0sp" android:textColor="@color/comm_menu_textcolor" android:background="@drawable/btn_tab_mobile_blue" android:paddingTop="34.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="移动应用"   android:focusable="true" android:shadowDx="0.0" android:shadowDy="0.0" />
+    </LinearLayout>
+    
+    <!--  合并报表与随手拍
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <RadioButton android:id="@+id/button_report" style="@style/tabbar_radioButton" android:textSize="10.0sp" android:textColor="@color/comm_menu_textcolor" android:background="@drawable/btn_tab_report_blue" android:paddingTop="34.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="报表" android:shadowDx="0.0" android:shadowDy="0.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <RadioButton android:id="@+id/button_tickets" style="@style/tabbar_radioButton" android:textSize="10.0sp" android:textColor="@color/comm_menu_textcolor" android:layout_gravity="center"  android:background="@drawable/btn_tab_tickets_blue" android:paddingTop="34.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="随手拍" android:shadowDx="0.0" android:shadowDy="0.0" />
+    </LinearLayout>
+    -->
+    
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <RadioButton android:id="@+id/button_setting" style="@style/tabbar_radioButton" android:textSize="10.0sp" android:textColor="@color/comm_menu_textcolor" android:layout_gravity="center"  android:background="@drawable/btn_tab_setting_blue" android:paddingTop="34.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="设置" android:shadowDx="0.0" android:shadowDy="0.0" />
+    </LinearLayout>
+</LinearLayout>

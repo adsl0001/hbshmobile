@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/dianping_detail_imageView"
+    android:layout_alignParentTop="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/dizhi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/dianping_detail_imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a_30" />
+
+            <TextView
+                android:id="@+id/dianping_detail_shangjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/dianping_detail_imageView"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/dianping_detail_imageView"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/dianping_detail_jieshao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/dianping_detail_shangjia"
+                android:layout_below="@+id/dianping_detail_shangjia"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/dianping_detail_jiage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/dianping_detail_imageView"
+                android:layout_alignLeft="@+id/dianping_detail_jieshao"
+                android:layout_marginBottom="10dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/changge_city_text_color_stop" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/dianping_detail_imageView"
+                android:layout_below="@+id/dianping_detail_imageView"
+                android:layout_marginTop="10dp"
+                 android:textColor="#000"
+                android:text="地址:" />
+
+            <TextView
+                android:id="@+id/dianping_dizhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_toRightOf="@+id/textView1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/textView1"
+                 android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:text="电话:" />
+
+            <TextView
+                android:id="@+id/dianping_dianhua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_toRightOf="@+id/textView3"
+                 android:textColor="#000"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/dianping_yuanjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/dianping_detail_jiage"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/dianping_detail_jiage"
+                 android:textColor="#000"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="10dp"
+                 android:textColor="#000"
+                android:text="详情:" />
+
+            <TextView
+                android:id="@+id/dianping_xiangqing"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_alignParentRight="true"
+                 android:textColor="#000"
+                android:layout_below="@+id/textView4"
+                android:text="" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

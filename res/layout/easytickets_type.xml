@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+<TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginLeft="3dp" 
+            android:gravity="center">
+
+        <Button
+        android:id="@+id/button_tickets_jl"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="正向激励" 
+        style="@style/listtype_button"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="3dp" 
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+    	<Button
+        android:id="@+id/button_tickets_wz"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="违章罚款" 
+        style="@style/listtype_button" />
+
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="3dp" 
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+    	<Button
+        android:id="@+id/button_safe"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="安全隐患" 
+        android:visibility="gone"
+        style="@style/listtype_button" />
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,152 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    android:background="@color/white"
+    tools:context="${relativePackage}.${activityClass}" >
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/white"
+	    android:orientation="vertical"
+	    >
+	    <!-- 规格型号 -->
+	    <TextView 
+	        android:padding="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:textColor="@color/black"
+	        android:textSize="18sp"
+	        android:text="规格型号:"/>
+	    <TextView 
+	        android:id="@+id/equipment_type"
+	        android:padding="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:textColor="@color/black"
+	        android:textSize="18sp"
+         	android:singleLine="true"
+	        android:text=""/>
+	    
+	    <!-- 设备id -->
+	    <TextView 
+	        android:padding="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:textColor="@color/black"
+	        android:textSize="18sp"
+	        android:text="设备ID:"/>
+	    <TextView
+	        android:id="@+id/equipment_id"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:padding="10dp"
+	        android:singleLine="true"
+	        android:text=""
+	        android:textColor="@color/black"
+	        android:textSize="18sp" />
+	    
+	    <!-- 资产编号 -->
+	    <TextView 
+	        android:padding="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:textColor="@color/black"
+	        android:textSize="18sp"
+	        android:text="资产编号:"/>
+	    <TextView
+	        android:id="@+id/equipment_number"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:padding="10dp"
+	        android:singleLine="true"
+	        android:text=""
+	        android:textColor="@color/black"
+	        android:textSize="18sp" />
+	    
+		<!--     资产名称 -->
+	    <TextView 
+	        android:padding="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:textColor="@color/black"
+	        android:textSize="18sp"
+	        android:text="资产名称:"/>
+	    <TextView 
+	        android:id="@+id/equipment_name"
+	        android:padding="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:textColor="@color/black"
+	        android:textSize="18sp"
+	        android:singleLine="true"
+	        android:text=""/>
+	  <!--   所在部门 -->
+	    <TextView 
+	        android:padding="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:textColor="@color/black"
+	        android:textSize="18sp"
+	        android:text="所在部门:"/>
+	    <TextView 
+	        android:id="@+id/equipment_department"
+	        android:padding="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:textColor="@color/black"
+	        android:textSize="18sp"
+	        android:singleLine="true"
+	        android:text=""/>
+	    <!-- 使用人 -->
+	    <TextView 
+	        android:padding="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:textColor="@color/black"
+	        android:textSize="18sp"
+	        android:text="使用人:"/>
+	    <TextView 
+	        android:id="@+id/equipment_user"
+	        android:padding="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:textColor="@color/black"
+	        android:textSize="18sp"
+	        android:singleLine="true"
+	        android:text=""/>
+	    <!-- 维修记录 -->
+	    <TextView 
+	        android:padding="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:textColor="@color/black"
+	        android:textSize="18sp"
+	        android:text="维修记录:"/>
+	    <TextView 
+	        android:id="@+id/equipment_repair"
+	        android:padding="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:textColor="@color/black"
+	        android:singleLine="false"
+	        android:textSize="18sp"
+	        android:text=""/>
+    </LinearLayout>
+</ScrollView>

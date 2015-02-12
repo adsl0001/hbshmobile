@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+      >
+
+    <ImageView
+        android:id="@+id/dianping_list_imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/a_30" />
+
+    <TextView
+        android:id="@+id/dianping_list_shangjia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dianping_list_imageView"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/dianping_list_imageView"
+        android:singleLine="true"
+          android:textColor="#000"  
+        android:text="TextViewdfsdfasdfasdfsadfsdfdfs"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dianping_list_jieshao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dianping_list_shangjia"
+        android:layout_below="@+id/dianping_list_shangjia"
+        android:layout_marginTop="8dp"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/dianping_list_jiage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dianping_list_imageView"
+        android:layout_alignLeft="@+id/dianping_list_jieshao"
+        android:layout_marginBottom="5dp"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textColor="@color/changge_city_text_color_stop" />
+
+</RelativeLayout>

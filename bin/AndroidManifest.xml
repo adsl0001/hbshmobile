@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hbsh.beta"
+    android:hardwareAccelerated="true"
+    android:versionCode="7"
+    android:versionName="1.2"
+    android:windowSoftInputMode="adjustPan" >
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-sdk android:minSdkVersion="9" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- JPush Required -->
+    <permission
+        android:name="com.hbsh.beta.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- JPush Required -->
+    <uses-permission android:name="com.hbsh.beta.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- mac地址 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--  -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!--  -->
+    <application
+        android:name="com.hse.mobile.oapub.HseApplication"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name="com.hse.mobile.oapub.Splash"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hse.mobile.oapub.CondovaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hse.mobile.oapub.Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hse.mobile.oapub.Portal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hse.mobile.oapub.Flow"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hse.mobile.oapub.NewsList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hse.mobile.oapub.NewsDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hse.mobile.oapub.EasyTickets"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hse.mobile.oapub.EasyTicketsList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hse.mobile.oapub.TakePhoto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hse.mobile.oapub.DepartSelectDialog"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hse.mobile.oapub.IllegalTicket"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hse.mobile.oapub.Report"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hse.mobile.oapub.Main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hse.mobile.oapub.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hse.mobile.oapub.Setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hse.mobile.oapub.EasyTicketTypeSelect"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hse.mobile.oapub.PersonSelectDialog"
+            android:screenOrientation="portrait" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.hse.mobile.oapub.PushMesssageReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <category android:name="com.hbsh.beta" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.hbsh.beta" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- Required  显示通知栏 -->
+                <category android:name="com.hbsh.beta" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="884a34ecc42e506981c99d83" />
+
+        <activity
+            android:name="com.hse.mobile.oapub.AboutHelpActivity"
+            android:label="@string/title_activity_about_help" >
+        </activity>
+        <activity
+            android:name="com.hse.mobile.oapub.VersionDescriptionActivity"
+            android:label="@string/title_activity_version_description" >
+        </activity>
+        <activity
+            android:name="com.hse.mobile.oapub.PortalNewActivity"
+            android:label="@string/title_activity_portal_new" >
+        </activity>
+        <activity
+            android:name="com.hse.mobile.oapub.TextSetting"
+            android:label="@string/title_activity_text_setting" >
+        </activity>
+        <activity
+            android:name="com.hse.mobile.oapub.Suggestion"
+            android:label="@string/title_activity_suggestion" >
+        </activity>
+
+        <receiver
+            android:name="com.hse.mobile.oa.business.MyBroadCast"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="downloadfile" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.ziteng.cn.test.MyActivity"
+            android:label="@string/title_activity_my" >
+        </activity>
+        <activity
+            android:name="com.hse.mobile.oapub.NewsList_talk"
+            android:label="@string/title_activity_news_list_talk" >
+        </activity>
+        <activity
+            android:name="com.ziteng.cn.test.ReadHistory"
+            android:label="@string/title_activity_read_history" >
+        </activity>
+        <activity
+            android:name="com.ziteng.cn.test.Weather"
+            android:label="@string/title_activity_weather" >
+        </activity>
+        <activity
+            android:name="com.hse.mobile.oapub.HSEGuideSEActivity"
+            android:label="@string/title_activity_hseguide_se" >
+        </activity>
+        <activity
+            android:name="com.hse.mobile.oapub.MobileActivity"
+            android:label="@string/title_activity_mobile" >
+        </activity>
+        <activity
+            android:name="com.hse.mobile.oapub.QrcodeScanActivity"
+            android:label="@string/title_activity_qrcode_scan" >
+        </activity>
+        <activity
+            android:name="com.hse.mobile.oapub.QrResult"
+            android:label="@string/title_activity_qr_result" >
+        </activity>
+        <activity
+            android:name="com.ziteng.cn.test.SafetyLoophole"
+            android:label="@string/title_activity_safety_loophole" >
+        </activity>
+        <activity
+            android:name="com.hse.mobile.oapub.NewMobileActivity"
+            android:label="@string/title_activity_mobile_activity" >
+        </activity>
+        <activity
+            android:name="com.hse.mobile.extapp.DZDPListActivity"
+            android:label="@string/title_activity_dzdplist_activity" 
+            android:screenOrientation="portrait"  >
+        </activity>
+        <activity
+            android:name="com.hse.mobile.extapp.DZDPDetailActivity"
+            android:label="@string/title_activity_dzdpdetail_activity" 
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.hse.mobile.extapp.MLAreaListActivity"
+            android:label="@string/title_activity_mlarealist_activity" 
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.hse.mobile.extapp.MLAreaDetailActivity"
+            android:label="@string/title_activity_mlareadetail_activity" 
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

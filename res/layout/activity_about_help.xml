@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fffbfbfb">
+    <ImageView 
+        android:id="@+id/aboutimage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_logo" 
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/aboutcode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="版本"
+        android:gravity="center"
+        android:textColor="@color/auth_light_black"
+        android:textSize="16sp" />
+     <RelativeLayout 
+         android:id="@+id/about_setting"
+         android:background="@drawable/bg_enter_bule" 
+         android:padding="10.0dip" 
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content" 
+         android:layout_marginLeft="10dip" 
+         android:layout_marginTop="20.0dip" 
+         android:layout_marginRight="10dip">
+		<RelativeLayout 
+		    android:id="@+id/about_setting1" 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:layout_alignParentTop="true">
+            <TextView android:id="@+id/about_thecode" 
+                android:layout_marginLeft="8.0dip" 
+        	    android:layout_marginTop="12.0dip" 
+        	    android:layout_marginBottom="12.0dip"  
+                android:text="版本更新" 
+                android:layout_alignParentLeft="true" 
+                android:layout_centerVertical="true" 
+                style="@style/form_label" />
+            <TextView 
+                android:id="@+id/updatedata"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:textSize="12sp"
+                android:text="已是最新版本"
+                />
+      	</RelativeLayout>
+        <ImageView 
+            android:id="@+id/about_diver1" 
+        	android:background="@drawable/devider_line" 
+        	android:layout_width="match_parent"
+      	   	android:layout_height="wrap_content" 
+      	   	android:layout_below="@id/about_setting1" />
+        <RelativeLayout 
+            android:id="@+id/about_setting2" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:layout_below="@id/about_diver1">
+        	<TextView 
+        	    android:id="@+id/about_function"  
+        	    android:layout_marginLeft="8.0dip" 
+        	    android:layout_marginTop="12.0dip" 
+        	    android:layout_marginBottom="12.0dip" 
+        	    android:text="更新说明" 
+        	    android:layout_alignParentLeft="true" 
+        	    android:layout_centerVertical="true"
+        	     style="@style/form_label" />
+        </RelativeLayout>
+        <ImageView 
+            android:id="@+id/about_diver2" 
+        	android:background="@drawable/devider_line" 
+        	android:layout_width="fill_parent"
+      	   	android:layout_height="wrap_content" 
+      	   	android:layout_below="@id/about_setting2" />
+        <RelativeLayout 
+            android:id="@+id/about_setting3" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:layout_below="@id/about_diver2">
+        	<TextView 
+        	    android:id="@+id/about_help"  
+        	    android:layout_marginLeft="8.0dip" 
+        	    android:layout_marginTop="12.0dip" 
+        	    android:layout_marginBottom="12.0dip" 
+        	    android:text="使用帮助" 
+        	    android:layout_alignParentLeft="true" 
+        	    android:layout_centerVertical="true"
+        	     style="@style/form_label" />
+        </RelativeLayout>
+	</RelativeLayout>
+
+</LinearLayout>

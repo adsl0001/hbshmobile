@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+<TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginLeft="3dp" 
+            android:gravity="center">
+
+        <Button
+        android:id="@+id/button_takephoto"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="拍照" 
+        style="@style/listtype_button"/>
+
+        </TableRow>
+
+
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="3dp" 
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+    	<Button
+    	    android:id="@+id/button_safe"
+    	    style="@style/listtype_button"
+    	    android:layout_width="158dp"
+    	    android:layout_height="wrap_content"
+    	    android:text="安全隐患" />
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/comm_baseactivitylyot" android:background="@color/common_bg_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/layout_comm_base_header" android:background="@drawable/common_title_bg" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <Button android:gravity="center" android:id="@+id/btn_comm_left" android:background="@drawable/btn_return_bg_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:visibility="gone" />
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:gravity="left|center" android:id="@+id/tv_comm_transfer_logo"  android:text="HSE Mobile OA" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </RelativeLayout>
+         </LinearLayout>
+        <Button android:textSize="13.0sp" android:textColor="#ffbedcff" android:gravity="center" android:id="@+id/btn_comm_right" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+     </RelativeLayout>
+     
+    <RelativeLayout
+        android:id="@+id/layout_comm_content"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" 
+        android:gravity="bottom"
+        >
+
+        <RadioGroup android:id="@+id/activity_group_radioGroup" android:background="@drawable/desktop_button_bg" android:layout_width="fill_parent" android:layout_height="60.0dip"  style="@style/bottombar_radioGroup">
+            <RadioButton android:id="@+id/activity_group_radioButton0" android:background="@drawable/global_tab_bg" android:text="门户" android:drawableTop="@drawable/home_2x"  style="@style/bottombar_radioButton" />
+            
+            <RadioButton android:id="@+id/activity_group_radioButton1" android:background="@drawable/global_tab_bg" android:text="入口" android:drawableTop="@drawable/portal_2x" style="@style/bottombar_radioButton" />
+           
+            <RadioButton android:id="@+id/activity_group_radioButton2" android:background="@drawable/global_tab_bg" android:text="报表" android:drawableTop="@drawable/report_2x" style="@style/bottombar_radioButton" />
+            
+            <RadioButton android:id="@+id/activity_group_radioButton3" android:background="@drawable/global_tab_bg" android:text="随手拍" android:drawableTop="@drawable/ticket_2x" style="@style/bottombar_radioButton" />
+            
+            <!-- 
+            <RadioButton android:id="@+id/activity_group_radioButton4" android:background="@drawable/global_tab_bg" android:text="设置" android:drawableTop="@drawable/setting_2x" style="@style/bottombar_radioButton" />
+        	 -->
+        </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>

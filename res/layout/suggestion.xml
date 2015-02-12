@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Suggestion" >
+	<EditText
+        android:id="@+id/suggestview"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:singleLine="false"
+        android:hint="必填，详细反馈"
+        android:gravity="top"
+	/>
+	<EditText 
+	    android:id="@+id/suggetmobile"
+	    android:layout_below="@+id/suggestview"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:phoneNumber="true"
+	    android:hint="必填，手机号码"/>
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="请填写常用手机号码，以便评奖后和您联系"
+	    android:layout_below="@+id/suggetmobile"
+	    />
+    
+</RelativeLayout>

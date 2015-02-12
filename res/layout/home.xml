@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.hse.mobile.oa.ui.PageGallery
+        android:id="@+id/gallery_photonews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:spacing="2dip" />
+	<TextView  
+	    android:id="@+id/txt_gallery_page"       
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="5dip"
+        android:gravity="center"
+        android:textSize="16.0sp"
+        >
+	    
+	</TextView>
+	
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginLeft="3dp" 
+            android:gravity="center">
+
+        <Button
+        android:id="@+id/button_CompanyNews"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="公司要闻" 
+        android:textSize="18.0sp"
+        style="@style/listtype_button"/>
+
+    	<Button
+        android:id="@+id/button_CompanyNotice"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="公司通知" 
+        android:textSize="18.0sp"
+        style="@style/listtype_button"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="3dp" 
+            android:gravity="center">
+    	<Button
+        android:id="@+id/button_BaseLevelDynamic"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="基层动态" 
+        android:textSize="18.0sp"
+        style="@style/listtype_button" />
+
+    	<Button
+        android:id="@+id/button_EducationGarden "
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="思政园地" 
+        android:textSize="18.0sp"
+        style="@style/listtype_button"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="3dp" 
+            android:gravity="center"
+            >
+    	<Button
+        android:id="@+id/button_LeadershipSpeech"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="领导讲话" 
+        android:textSize="18.0sp"
+        style="@style/listtype_button"/>
+
+    	<Button
+        android:id="@+id/button_SpecialReport"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="专题报道"   
+        android:textSize="18.0sp"      
+        style="@style/listtype_button"/>
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="3dp" 
+            android:gravity="center" >
+    	<Button
+        android:id="@+id/button_SecurityNews"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="聚焦媒体" 
+        android:textSize="18.0sp"        
+        style="@style/listtype_button"/>
+
+    	<Button
+        android:id="@+id/button_SecurityColumn"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="安全专栏" 
+        android:textSize="18.0sp"        
+        style="@style/listtype_button"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+</ScrollView>

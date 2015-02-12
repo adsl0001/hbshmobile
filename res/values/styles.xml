@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="listtype_button">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">3.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+    </style>
+    
+  	<style name="text_title">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+  	<style name="text_content">
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+    <style name="tabbar_radioButton">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="NotificationText">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="NotificationTitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="bottombar_radioGroup" parent="@style/layout_vertical">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="bottombar_radioButton" parent="@style/layout_horizontal">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/tab_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingBottom">1.0dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+  
+   
+    
+    <style name="tab_divider">
+        <item name="android:background">@drawable/pic_divider</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+  
+    <style name="layout_full">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="layout_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="layout_horizontal" parent="@style/layout_full">
+        <item name="android:layout_width">0.0px</item>
+    </style>
+    <style name="layout_vertical" parent="@style/layout_full">
+        <item name="android:layout_height">0.0px</item>
+    </style>
+
+    <style name="pager_radioButton">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+     <style name="form_label">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/auth_light_black</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">4</item>
+    </style>
+ 
+</resources>
